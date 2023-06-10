@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 15px;
+}
+.container{
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/person/mama_bagina.jpg");
+    cursor: pointer;
+    height: 240px;
+    width: 320px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 320px;
+}
+.container .heart{
+    color: red;
+    font-size: 40px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.heart.active{
+    animation: animate .8s linear forwards;
+}
+@keyframes animate {
+    30%{
+        font-size: 10px;
+        opacity: 1;
+    }
+    40%{
+        font-size: 40px;
+        opacity: 1;
+    }
+    60%{
+        font-size: 50px;
+        opacity: 1;
+    }
+    70%{
+        font-size: 60px;
+        opacity: 1;
+    }
+}
